@@ -31,7 +31,8 @@
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  position: relative;
+  height: 100vh;
+  overflow: scroll;
 }
 
 .chat__info {
@@ -47,7 +48,6 @@
 
 .chat__control {
   margin-top: 20px;
-  position: absolute;
   bottom: 0px;
 }
 

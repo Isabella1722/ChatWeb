@@ -31,10 +31,9 @@
     width: 600px;
     background-image: url("https://images-ext-1.discordapp.net/external/Qf_DuWus1A_WLJggL8Qig1ZrIdl81ptnPl3M9_eGMp0/https/static1.lasprovincias.es/www/multimedia/201904/08/media/cortadas/136423772--624x934.jpg?width=409&height=612");
     background-size: cover;
-    
-    
     justify-content: right;
-    position: relative;
+    height: 100vh;
+    overflow:scroll ;
 }
 .chat__info{
     background: white;
@@ -49,8 +48,6 @@
 
 .chat__control{
     margin-top: 20px;
-    //margin-bottom: 20px;
-    position: absolute;
     bottom: 0px;
 }
 .message{
