@@ -50,8 +50,8 @@
 .chat__control {
   margin-top: 20px;
   bottom: 0px;
-  position: absolute;
   padding-top: 6%;
+  position: fixed;
 }
 
 .message {
@@ -91,5 +91,10 @@
 
 .hidden {
   display: none;
+}
+
+.authSignout {
+  margin-top: 20px;
+  font-size: 25px;
 }
 /*# sourceMappingURL=main.css.map */
