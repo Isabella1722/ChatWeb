@@ -24,12 +24,14 @@
 }
 
 .chat {
+  height: 100vh;
   width: 600px;
   background-image: url("https://images-ext-1.discordapp.net/external/Qf_DuWus1A_WLJggL8Qig1ZrIdl81ptnPl3M9_eGMp0/https/static1.lasprovincias.es/www/multimedia/201904/08/media/cortadas/136423772--624x934.jpg?width=409&height=612");
   background-size: cover;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
+  position: relative;
 }
 
 .chat__info {
@@ -45,7 +47,8 @@
 
 .chat__control {
   margin-top: 20px;
-  margin-bottom: 20px;
+  position: absolute;
+  bottom: 0px;
 }
 
 .message {
@@ -59,5 +62,31 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+}
+
+.form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

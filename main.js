@@ -1,17 +1,4 @@
 
-const firebaseConfig = {
-    apiKey: "AIzaSyBRfYK3zEHk5Aq6OMJ7OtnMTJj9G659wrA",
-    authDomain: "chat-6c8e0.firebaseapp.com",
-    databaseURL: "https://chat-6c8e0.firebaseio.com",
-    projectId: "chat-6c8e0",
-    storageBucket: "chat-6c8e0.appspot.com",
-    messagingSenderId: "121834586028",
-    appId: "1:121834586028:web:691dbd1fbfa6308ffb4409",
-    measurementId: "G-JM52LK3T7Q"
-};
-
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
   
   const db = firebase.firestore();
   const messageRef = db.collection('message');
@@ -19,6 +6,8 @@ const firebaseConfig = {
   const chat = document.querySelector('.chat');
   const chatbody = document.querySelector('.chat__body');
 
+
+  //const usersRef = db.collection('users');
   // creación de nuevos mensajes a partir de la lista
   function renderMessage (list) {
     chatbody.innerHTML = '';
@@ -28,6 +17,7 @@ const firebaseConfig = {
   
         newMessage.innerHTML = `
         <div class="chat__info">
+        <p class="chat__name">${elem.name}</p>
         <p class="chat__p"> ${elem.text}</p>
         </div>
         `;
@@ -60,7 +50,8 @@ const firebaseConfig = {
     event.preventDefault();
   
     const newMessage = {
-      text: form.message.value
+      text: form.message.value,
+      name: nameUser
     };
   
     messageRef // referencia de la colección
