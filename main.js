@@ -25,11 +25,12 @@
       chatbody.appendChild(newMessage);
     });
 
-    messageRef.orderBy("date");
+  
   }
   
   function getMessages(){
     messageRef  // referencia de la colección
+    .orderBy("date")
     .onSnapshot( function (querySnapshot) {
       const objects = [];
       querySnapshot.forEach((doc) => {
