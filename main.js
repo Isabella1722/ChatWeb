@@ -24,6 +24,8 @@
 
       chatbody.appendChild(newMessage);
     });
+
+    messageRef.orderBy("date");
   }
   
   function getMessages(){
@@ -51,7 +53,9 @@
   
     const newMessage = {
       text: form.message.value,
-      name: nameUser
+      name: nameUser,
+      date:Date.now()
+
     };
   
     messageRef // referencia de la colección
