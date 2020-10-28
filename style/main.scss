@@ -22,6 +22,7 @@
     margin-left: 20px;
     width: 300px;
     margin-right: 0px;
+
 }
 
 
@@ -34,6 +35,7 @@
     justify-content: right;
     height: 100vh;
     overflow:scroll ;
+    position: relative;
 }
 .chat__info{
     background: white;
@@ -49,6 +51,8 @@
 .chat__control{
     margin-top: 20px;
     bottom: 0px;
+    position: absolute;
+    padding-top: 6%;
 }
 .message{
     width: 0px;
